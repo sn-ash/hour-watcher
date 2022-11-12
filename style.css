@@ -1,0 +1,72 @@
+:root {
+    --primary: #d4a373;
+    --secondary: white;
+    --accent: #faedcd;
+    --time: #edede9;
+    --bg: #9c6644;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.title h1 {
+    font-size: 7rem;
+    font-weight: 600;
+    margin: 1rem 2rem;
+}
+
+.watch {
+    text-align: center;
+    background-color: var(--bg);
+    width: 100%;
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 4rem 2rem;
+    border-radius: 5px;
+}
+
+.time {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    color: var(--bg);
+    background-color: var(--secondary);
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.controls button:hover {
+    background-color: var(--time);
+}
